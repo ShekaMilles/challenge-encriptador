@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptor</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="buttons.css" />
+    <link rel="stylesheet" href="message_encriptor.css" />
+  </head>
+  <body>
+    <header></header>
+    <main class="body_main_encriptor">
+      <section class="main_encriptor">
+        <div class="body_input_elements">
+          <img
+            class="body_img_logo"
+            src="./images/logo.jpg"
+            alt="logo_encriptor"
+          />
+          <input
+            class="body_input_encriptor"
+            id="input_encriptor_text"
+            type="text"
+            placeholder="Escriba su texto aqui"
+          />
+        </div>
+        <div class="body_main_buttons">
+          <div class="section_input_button">
+            <button
+              class="main_button_encriptor"
+              id="button-encriptor"
+              onclick="encriptar()"
+            >
+              Encriptar
+            </button>
+            <button class="main_button_desencriptor" id="button-desencriptor">
+              Desencriptar
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="body_main_response">
+        <div class="main_response_text">
+          <h2>Ningún mensaje fue encontrado</h2>
+          <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="app.js"></script>
+  </body>
+</html>
