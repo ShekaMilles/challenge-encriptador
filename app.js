@@ -1,5 +1,7 @@
 const buttonEncriptar = document.getElementById("button-encriptor");
 const buttonDesencriptar = document.getElementById("button-desencriptor");
+const textResponseH = document.getElementById("main_response_h1");
+const textResponseP = document.getElementById("main_response_p");
 
 let textoEncriptado = "";
 
@@ -7,9 +9,10 @@ function encriptar() {
   const vocales = ["a", "e", "i", "o", "u"];
   const claves = ["ai", "enter", "imes", "ober", "ufat"];
   const texto = document.getElementById("input_encriptor_text").value;
-
+  console.log(texto);
   let letra;
   let bb = true;
+  textoEncriptado = "";
   for (let x = 0; x < texto.length; x++) {
     letra = texto[x];
     console.log(letra);
@@ -25,10 +28,22 @@ function encriptar() {
     }
     bb = true;
   }
+  clearMessage();
+  console.log(textoEncriptado);
+  showMessageEncript();
   console.log(textoEncriptado);
 }
 
-buttonEncriptar.onclick = encriptar();
+function showMessageEncript() {
+  textResponseH.innerHTML = textoEncriptado;
+  textResponseP.innerHTML = "";
+  console.log(textResponseH);
+}
+
+function clearMessage() {
+  document.getElementById("input_encriptor_text").value = "";
+}
+
 // const mapa = {
 //   a: "ai",
 //   e: "enter",

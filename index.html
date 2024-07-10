@@ -18,19 +18,19 @@
             src="./images/logo.jpg"
             alt="logo_encriptor"
           />
-          <input
+          <textarea
             class="body_input_encriptor"
             id="input_encriptor_text"
-            type="text"
+            type="area"
             placeholder="Escriba su texto aqui"
-          />
+          ></textarea>
         </div>
         <div class="body_main_buttons">
           <div class="section_input_button">
             <button
               class="main_button_encriptor"
               id="button-encriptor"
-              onclick="encriptar()"
+              onclick="encriptar();"
             >
               Encriptar
             </button>
@@ -42,8 +42,10 @@
       </section>
       <section class="body_main_response">
         <div class="main_response_text">
-          <h2>Ningún mensaje fue encontrado</h2>
-          <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+          <h2 id="main_response_h1">Ningún mensaje fue encontrado</h2>
+          <p id="main_response_p">
+            Ingresa el texto que desees encriptar o desencriptar.
+          </p>
         </div>
       </section>
     </main>
