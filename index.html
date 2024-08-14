@@ -26,6 +26,12 @@
           ></textarea>
         </div>
         <div class="body_main_buttons">
+          <div class="main_instruccion_buttons">
+            <p>
+              Inserte solo letras minúsculas y sin acentos ni caracteres
+              especiales.
+            </p>
+          </div>
           <div class="section_input_button">
             <button
               class="main_button_encriptor"
@@ -34,7 +40,11 @@
             >
               Encriptar
             </button>
-            <button class="main_button_desencriptor" id="button-desencriptor">
+            <button
+              class="main_button_desencriptor"
+              id="button-desencriptor"
+              onclick="desEncriptor()"
+            >
               Desencriptar
             </button>
           </div>
@@ -42,14 +52,29 @@
       </section>
       <section class="body_main_response">
         <div class="main_response_text">
+          <img
+            class="body_response_imglupa"
+            id="response_img_lupa"
+            src="./images/lupa.png"
+            alt="img_lupa"
+          />
           <h2 id="main_response_h1">Ningún mensaje fue encontrado</h2>
           <p id="main_response_p">
             Ingresa el texto que desees encriptar o desencriptar.
           </p>
         </div>
+        <div class="body_button_copytex">
+          <button
+            class="body_main_copytext"
+            id="button_copy"
+            onclick="copyTextEncriptor()"
+          >
+            Copiar Texto
+          </button>
+        </div>
       </section>
     </main>
     <footer></footer>
-    <script src="app.js"></script>
+    <script src="encriptor.js"></script>
   </body>
 </html>
