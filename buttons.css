@@ -6,13 +6,19 @@
 
 .body_main_buttons {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+}
+
+.main_instruccion_buttons {
+  justify-content: flex-start;
+  font-family: "Monserrat", sans-serif;
+  font-size: 20px;
+  padding: 0% 0% 0% 6%;
 }
 
 .section_input_button {
-  margin: 5% 5% 5% 5%;
+  padding: 5%;
   display: flex;
-  justify-content: space-between;
   gap: 24px;
 }
 
@@ -24,16 +30,49 @@
   background-color: #ff6969;
   color: #fff5e1;
   border-color: #ff6969;
-  font-family: "Krona One", sans-serif;
+  font-family: "Monserrat", sans-serif;
 }
 
 .main_button_desencriptor {
   width: 300px;
-  height: 75;
+  height: 75px;
   border-radius: 15px;
   font-size: 20px;
   background-color: #fff5e1;
   color: #ff6969;
   border-color: #ff6969;
-  font-family: "Krona One", sans-serif;
+  font-family: "Monserrat", sans-serif;
+}
+
+.body_button_copytex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5% 5% 10% 5%;
+}
+.body_main_copytext {
+  width: 250px;
+  height: 75px;
+  border-radius: 15px;
+  font-size: 20px;
+  background-color: #ff6969;
+  color: #fff5e1;
+  border-color: #ff6969;
+  font-family: "Monserrat", sans-serif;
+}
+
+@media (max-width: 480px) {
+  .main_instruccion_buttons {
+    justify-content: flex-start;
+    font-family: "Monserrat", sans-serif;
+    font-size: 15px;
+    padding: 0% 0% 0% 6%;
+  }
+  .section_input_button {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 }
